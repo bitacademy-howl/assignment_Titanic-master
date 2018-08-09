@@ -25,20 +25,6 @@ prediction(model, X_test)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # for c in c_list:
 #     for g in g_list:
 #         model_SVM = SVC(C=c, gamma=best_gamma)
@@ -48,20 +34,3 @@ prediction(model, X_test)
 #         accuracy = metrics.accuracy_score(Y_test_cv, prediction)
 #         print('Accuracy    = ' + str(np.round(accuracy, 2)))
 # ########################################################################################################################
-
-
-
-# confusion matrix 계산
-# 테스트 데이터의 정답이 존재하지 않으므로 의미없다
-
-# def confusion_matrix(pred, gt):
-#     cont = np.zeros((2,2))
-#     for i in [0, 1]:
-#         for j in [0, 1]:
-#             cont[i, j] = np.sum((pred == i) & (gt == j))
-#     return cont
-
-# survived == prediction
-
-# print(cfm)
-# import matplotlib.pyplot as plt
